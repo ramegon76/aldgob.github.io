@@ -1,0 +1,63 @@
+---
+title: "Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS)"
+subtitle: "Aprovechamiento del lago de datos para la implementación de criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información."
+output:
+    html_document:
+      theme: cerulean
+      highlight: tango
+      toc: true
+      toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+<br>
+<br>
+
+
+## Introducción
+
+Generalidades sobre las estadísticas de puestos de trabajo y su importancia. Uso de datos sintéticos para las estimaciones.
+
+Generalidades sobre el caso de uso del proceso de la EPTPASS para el proyecto de investigación.
+
+<br>
+<br>
+
+## Antecedentes
+
+Narrativa histórica del proyecto 
+
+<br>
+<br>
+
+## Modelado inicial del Proceso
+
+El proceso para obtener las estimaciones de la EPTPTASS puede describirse en forma sencilla mediante el [Modelado del Proceso de Producción](https://365inegi.sharepoint.com/sites/dgiai/100_DGG_DGIAII/150_DAA_DGAI/MPP/SiteAssets/ModeloProcesos/DGES/EPTPTASS/index.aspx){target="_blank"}. En el modelado se pueden observar los pasos necesarios para producir las estimaciones desde la generación de datos sintéticos. En este primer modelado, se incluye una bifurcación que corresponde a un análisis en el que se  utilizan dos formas de procesamiento, a efecto de comparar sus eficiencias. 
+
+
+## Alineación del Modelado con la NTPPIEG
+
+Un primer paso hacia la implementación de criterios de gobierno y arquitectura de la información sobre este proceso consiste en incorporar el modelado en el marco de la Norma Técnica del Proceso de Proceso de Producción de Información Estadística y Geográfica, de modo que sea posible identificar la correspondencia de las actividades que se realizan con las fases y actividades del MPEG.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
