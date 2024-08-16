@@ -1,12 +1,12 @@
 ---
 title: "Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS)"
 subtitle: "Aprovechamiento del lago de datos para la implementación de criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información."
-output:
-    html_document:
-      theme: cerulean
-      highlight: tango
-      toc: true
-      toc_float: true
+output: 
+  html_document:
+    theme: flatly
+    toc: yes
+    toc_float:
+      collapsed: true
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 
-## Introducción
+# 1. Introducción
 
 Generalidades sobre las estadísticas de puestos de trabajo y su importancia. Uso de datos sintéticos para las estimaciones.
 
@@ -27,36 +27,231 @@ Generalidades sobre el caso de uso del proceso de la EPTPASS para el proyecto de
 <br>
 <br>
 
-## Antecedentes
+# 2. Antecedentes
 
 Narrativa histórica del proyecto 
 
 <br>
 <br>
 
-## Modelado inicial del Proceso
+# 3. Modelado inicial del Proceso
 
-El proceso para obtener las estimaciones de la EPTPTASS puede describirse en forma sencilla mediante el [Modelado del Proceso de Producción](https://365inegi.sharepoint.com/sites/dgiai/100_DGG_DGIAII/150_DAA_DGAI/MPP/SiteAssets/ModeloProcesos/DGES/EPTPTASS/index.aspx){target="_blank"}. En el modelado se pueden observar los pasos necesarios para producir las estimaciones desde la generación de datos sintéticos. En este primer modelado, se incluye una bifurcación que corresponde a un análisis en el que se  utilizan dos formas de procesamiento, a efecto de comparar sus eficiencias. 
-
-
-## Alineación del Modelado con la NTPPIEG
-
-Un primer paso hacia la implementación de criterios de gobierno y arquitectura de la información sobre este proceso consiste en incorporar el modelado en el marco de la Norma Técnica del Proceso de Proceso de Producción de Información Estadística y Geográfica, de modo que sea posible identificar la correspondencia de las actividades que se realizan con las fases y actividades del MPEG.
+El proceso para obtener las estimaciones de la EPTPTASS puede describirse en forma sencilla mediante el [Modelado del Proceso de Producción](https://365inegi.sharepoint.com/sites/dgiai/100_DGG_DGIAII/150_DAA_DGAI/MPP/SiteAssets/ModeloProcesos/DGES/EPTPTASS/index.aspx){target="_blank"}. En el modelado se pueden observar los pasos necesarios para producir las estimaciones desde la generación de datos sintéticos. En este primer modelado, se incluyen actividades que corresponden a un análisis en el que se  utilizan dos formas de procesamiento, a efecto de comparar sus eficiencias. 
 
 
+<br>
+<br>
+
+# 4. Criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información.
+
+En este apartado se exploran los criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información aplicables a cada de una de las actividades del proceso que se describe. Se parte de un replanteamiento del modelado inicial del proceso para apegarse a la NTPPIEG, y se exploran a continuación los aspectos o criterios aplicables a cada una de las actividades que constituyen el proceso.
+
+
+<br>
+<br>
+
+
+## 4.1 Alineación del Modelado con la NTPPIEG
+
+Un primer paso hacia la implementación de criterios de gobierno y arquitectura de la información sobre este proceso consiste en incorporar el modelado en el marco de la Norma Técnica del Proceso de Proceso de Producción de Información Estadística y Geográfica, de modo que sea posible identificar la correspondencia de las actividades que se realizan con las fases y actividades del MPEG. El [Modelado del Proceso alineado con la NTPPIEG](https://ramegon76.github.io/modntppieg/){target="_blank"} ordena las actividades y se alinea con la terminología usada en la norma. Se usan colores y se númeran las actividades indicando la fase del MPEG a la que pertenece y el consecutivo de la actividad dentro de la fase. 
+
+<br>
+<br>
+
+## 4.2 Criterios asociados a las actividades del proceso
+
+<br>
+<br>
+
+### [Preparar datos sintéticos IMSS](https://ramegon76.github.io/modntppieg/#diagram/f9f2d41d-48bc-4e2f-a2e0-45dc9b0e7d68){target="_blank"}
+
+<br>
+
+**Infraestructura de la información**
+
+Documentación de la metodología utilizada para la generación de datos sintéticos
+
+<br>
+
+**Seguridad y confidencialidad estadística**
+
+Medidas que aseguren que no es posible revertir los datos sintéticos para identificar los datos originales.
+
+<br>
+
+**Metadatos asociados a la generación de datos sintéticos**
+
+Descripción de los metadatos que acompañan a los datos sintéticos 
+
+
+<br>
+<br>
+
+### [Validar datos sintéticos IMSS](https://ramegon76.github.io/modntppieg/#diagram/84e9ed17-cb8d-45e7-9376-0ed86be7985a){target="_blank"}
+
+<br>
+
+**Métricas de calidad sobre el proceso de validación**
+
+Documenta los procesos de verificación de cumplimiento de la validación utilizados para mejorar la calidad de los datos.
+
+<br>
+
+**Metadatos asociados a la validación de datos sintéticos**
+
+Descripción de los metadatos que acompañan al proceso de vaklidación 
+
+<br>
+
+**Registro de evidencias de la validación**
+
+Bitácora del registro de las modificaciones realizadas durante la validación que documente el procesamiento realizado y sirva para garantizar la trazabilidad de los datos.
+
+
+<br>
+<br>
+
+### [Preparar datos sintéticos ISSSTE](https://ramegon76.github.io/modntppieg/#diagram/18f9d249-2791-4b42-97c1-d12ab07bf5b1){target="_blank"}
+
+<br>
+
+**Infraestructura de la información**
+
+Documentación de la metodología utilizada para la generación de datos sintéticos
+
+<br>
+
+**Seguridad y confidencialidad estadística**
+
+Medidas que aseguren que no es posible revertir los datos sintéticos para identificar los datos originales.
+
+<br>
+
+**Metadatos asociados a la generación de datos sintéticos**
+
+Descripción de los metadatos que acompañan a los datos sintéticos 
+
+
+<br>
+<br>
+
+### [Extraer datos y adecuar scripts](https://ramegon76.github.io/modntppieg/#diagram/1871b536-bf9b-4ad5-acb4-343e0ec33345){target="_blank"}
+
+<br>
+
+**Seguridad de la información**
+Descripción de los mecanismos de autenticación y autorización utilizados para garantizar que el acceso a la bóveda digital esté restringido a usuarios no autorizados. Por otra parte, conocer los registros detallados de acceso para saber quién accede, cuándo y qué acciones realizan.
+
+<br>
+
+**Control de cambios en los códigos**
+
+Versionado de Código. Asegurar que los scripts sean versionados y documentados adecuadamente para mantener la trazabilidad y facilitar futuras auditorías.
+
+<br>
+
+**Métricas de calidad**
+
+Documenta los procesos de pruebas y validación del código para asegurar que cumple con los objetivos del procesamiento.
 
 
 
+<br>
+<br>
+
+### [Producir los resultados](https://ramegon76.github.io/modntppieg/#diagram/3652d23b-d7ea-4ab4-9bfd-71933e4751d1){target="_blank"}
+
+<br>
+
+**Métricas de calidad**
+
+Documenta los indicadores o métricas que aseguran que la precisión o calidad de los resultados.
+
+<br>
+
+**Metadatos asociados a la producción de resultados**
+
+Descripción de los metadatos que acompañan a los resultados.
+
+<br>
+
+**Registro de evidencias de la producción de resultados**
+
+Conjunto de información de los resultados.
+
+<br>
+
+**Controles de acceso a los resultados**
+
+Define los controles y criterios para compartir y acceder a los resultados, asegurando que se sigan las mejores prácticas de seguridad.
+
+<br>
+<br>
+
+### [Evaluar el proceso](https://ramegon76.github.io/modntppieg/#diagram/1f7afae6-915b-4890-8526-f01aacd7ac43){target="_blank"}
+
+<br>
+
+**Métricas de calidad**
+
+Indicadores de Calidad. Establece y documenta indicadores desempeño que miden la calidad, exactitud y eficiencia de proceso.
+
+<br>
+
+**Registro de evidencias de la producción de resultados**
+
+Reporte de la evaluación y plan de acción (si existe)
+
+<br>
+<br>
+
+### 4.3 Otros aspectos sobre el proceso en general
+
+<br>
+
+**Elementos descriptivos del IPI**
+
+Podría adelantarse la documentación de estos elementos, con miras a incorporar el proceso experimental al IPI en el futuro.
+
+<br>
+
+**Metadatos referenciales del proceso**
+
+Descripción de los metadatos referenciales que acompañan a los resultados, según la normativa institucional.
+
+<br>
+
+**Evaluación de la interoperabilidad del proceso**
+
+¿Aplicación del cuestionario de madurez de interoperabilidad?
 
 
+<br>
+<br>
 
+# 5. Elementos reutilizables del proceso
 
+<br>
 
+Identificación de partes del proceso que pueden gestionarse en forma automatizada. En estos segmentos del proceso pueden operarse procesos automatizables mediante el desarrollo de aplicaciones y servicios.
 
+<br>
+<br>
 
+# 6. Lecciones aprendidas y sugerencias de mejora
 
+<br>
 
+Cualquier aspecto que se detecte que sea susceptible de mejora desde el punto de vista de los criterios documentados.
 
+<br>
+<br>
+
+# 7. Conclusiones
+
+<br>
+
+Resumen de los logros obtenidos.
 
 
 
