@@ -180,6 +180,11 @@ Descripción de los metadatos que acompañan a los resultados.
 Conjunto de información de los resultados.
 
 <br>
+<br>
+
+### [Cargar los resultados para su difusión](https://ramegon76.github.io/modntppieg/#diagram/0ddf16a0-33d1-4465-a00d-d906af10d379){target="_blank"}
+
+<br>
 
 **Controles de acceso a los resultados**
 
