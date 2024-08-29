@@ -36,7 +36,10 @@ Narrativa histórica del proyecto
 
 # 3. Modelado inicial del Proceso
 
-El proceso para obtener las estimaciones de la EPTPTASS puede describirse en forma sencilla mediante el [Modelado del Proceso de Producción](https://365inegi.sharepoint.com/sites/dgiai/100_DGG_DGIAII/150_DAA_DGAI/MPP/SiteAssets/ModeloProcesos/DGES/EPTPTASS/index.aspx){target="_blank"}. En el modelado se pueden observar los pasos necesarios para producir las estimaciones desde la generación de datos sintéticos. En este primer modelado, se incluyen actividades que corresponden a un análisis en el que se  utilizan dos formas de procesamiento, a efecto de comparar sus eficiencias. 
+El proceso para obtener las estimaciones de la EPTPTASS puede describirse en forma sencilla mediante el [Modelado del Proceso de Producción](https://ramegon76.github.io/modeptassorigin/index.html){target="_blank"}. En el modelado se pueden observar los pasos necesarios para producir las estimaciones desde la generación de datos sintéticos. En este primer modelado, se incluyen actividades que corresponden a un análisis en el que se  utilizan dos formas de procesamiento, a efecto de comparar sus eficiencias. 
+
+
+<iframe src="https://ramegon76.github.io/modeptassorigin/index.html" height="605" width="800" style="border: 1px solid #464646;" allowfullscreen="" data-external="1"></iframe>
 
 
 <br>
@@ -53,9 +56,22 @@ En este apartado se exploran los criterios de gobierno, seguridad, confidenciali
 
 ## 4.1 Alineación del Modelado con la NTPPIEG
 
-Un primer paso hacia la implementación de criterios de gobierno y arquitectura de la información sobre este proceso consiste en incorporar el modelado en el marco de la Norma Técnica del Proceso de Proceso de Producción de Información Estadística y Geográfica, de modo que sea posible identificar la correspondencia de las actividades que se realizan con las fases y actividades del MPEG. El [Modelado del Proceso alineado con la NTPPIEG](https://ramegon76.github.io/modntppieg/){target="_blank"} ordena las actividades y se alinea con la terminología usada en la norma. Se usan colores y se númeran las actividades indicando la fase del MPEG a la que pertenece y el consecutivo de la actividad dentro de la fase. 
+Un primer paso hacia la implementación de criterios de gobierno y arquitectura de la información sobre este proceso consiste en incorporar el modelado en el marco de la Norma Técnica del Proceso de Proceso de Producción de Información Estadística y Geográfica, de modo que sea posible identificar la correspondencia de las actividades que se realizan con las fases y actividades del MPEG. El Modelado del Proceso alineado con la NTPPIEG ordena las actividades y se alinea con la terminología usada en la norma. Se usan colores y se númeran las actividades indicando la fase del MPEG a la que pertenece y el consecutivo de la actividad dentro de la fase. 
 
 <br>
+
+Se sugiere dar clic derecho en la siguiente imagen  y abrirla en una pestaña nueva:
+
+<br>
+
+<div>
+<p style = 'text-align:center;'>
+<img src="imag/Modelado_Encuestas_NTPPIEG_28082024.png" alt="JuveYell" width="2000px">
+</p>
+</div>
+
+<br>
+
 <br>
 
 ## 4.2 Criterios asociados a las actividades del proceso
@@ -63,7 +79,7 @@ Un primer paso hacia la implementación de criterios de gobierno y arquitectura 
 <br>
 <br>
 
-### [Preparar datos sintéticos IMSS](https://ramegon76.github.io/modntppieg/#diagram/f9f2d41d-48bc-4e2f-a2e0-45dc9b0e7d68){target="_blank"}
+### Preparar datos sintéticos IMSS
 
 <br>
 
@@ -87,8 +103,7 @@ Descripción de los metadatos que acompañan a los datos sintéticos
 <br>
 <br>
 
-### [Validar datos sintéticos IMSS](https://ramegon76.github.io/modntppieg/#diagram/84e9ed17-cb8d-45e7-9376-0ed86be7985a){target="_blank"}
-
+### Validar datos sintéticos IMSS
 <br>
 
 **Métricas de calidad sobre el proceso de validación**
@@ -111,7 +126,7 @@ Bitácora del registro de las modificaciones realizadas durante la validación q
 <br>
 <br>
 
-### [Preparar datos sintéticos ISSSTE](https://ramegon76.github.io/modntppieg/#diagram/18f9d249-2791-4b42-97c1-d12ab07bf5b1){target="_blank"}
+### Preparar datos sintéticos ISSSTE
 
 <br>
 
@@ -135,7 +150,7 @@ Descripción de los metadatos que acompañan a los datos sintéticos
 <br>
 <br>
 
-### [Extraer datos y adecuar scripts](https://ramegon76.github.io/modntppieg/#diagram/1871b536-bf9b-4ad5-acb4-343e0ec33345){target="_blank"}
+### Extraer datos y adecuar scripts
 
 <br>
 
@@ -159,7 +174,7 @@ Documenta los procesos de pruebas y validación del código para asegurar que cu
 <br>
 <br>
 
-### [Producir los resultados](https://ramegon76.github.io/modntppieg/#diagram/3652d23b-d7ea-4ab4-9bfd-71933e4751d1){target="_blank"}
+### Producir los resultados
 
 <br>
 
@@ -182,7 +197,7 @@ Conjunto de información de los resultados.
 <br>
 <br>
 
-### [Cargar los resultados para su difusión](https://ramegon76.github.io/modntppieg/#diagram/0ddf16a0-33d1-4465-a00d-d906af10d379){target="_blank"}
+### Cargar los resultados para su difusión
 
 <br>
 
@@ -193,8 +208,7 @@ Define los controles y criterios para compartir y acceder a los resultados, aseg
 <br>
 <br>
 
-### [Evaluar el proceso](https://ramegon76.github.io/modntppieg/#diagram/1f7afae6-915b-4890-8526-f01aacd7ac43){target="_blank"}
-
+### Evaluar el proceso
 <br>
 
 **Métricas de calidad**
